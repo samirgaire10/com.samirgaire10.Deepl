@@ -55,15 +55,33 @@ Item {
 							Layout.fillWidth: true
 							spacing: Kirigami.Units.mediumSpacing
 
+ PlasmaComponents.ToolButton {
+    text: "Deepl translater"
+    onClicked: {
+        // Open abc.com in a web browser
+        gptWebView.url = "https://www.deepl.com"
+    }
+}
+
+
+
 							Kirigami.Heading {
 								id: samirgaire10
 								Layout.alignment: Qt.AlignCenter
 								Layout.fillWidth: true
 								verticalAlignment: Text.AlignVCenter
-								text: i18n("Deepl translater")
 								color: theme.textColor
 							}
 						}
+
+						 PlasmaComponents.ToolButton {
+    text: "Deepl Write"
+    onClicked: {
+        // Open abc.com in a web browser
+        gptWebView.url = "https://www.deepl.com/write"
+    }
+}
+
 
 						PlasmaComponents.ToolButton {
 							text: i18n("Debug")
